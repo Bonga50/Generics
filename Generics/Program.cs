@@ -24,6 +24,11 @@ namespace Generics
 
         static bool comp<T>(T x,T y) 
         {
+            if (x.GetType()==typeof(string))
+            {
+                return x.ToString().ToLower().Equals(y.ToString().ToLower());
+
+            }
             return x.Equals(y);
 
         }
