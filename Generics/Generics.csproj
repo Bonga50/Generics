@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Generics.GenericLinkedList.LinkedListTester</StartupObject>
+    <StartupObject>Generics.GenericConstraints.ConstraintListRunner</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenericConstraints\ConstraintListRunner.cs" />
+    <Compile Include="GenericConstraints\MyLinkedList.cs" />
+    <Compile Include="GenericConstraints\Student.cs" />
     <Compile Include="GenericLinkedList\GenericLinkedListRunner.cs" />
     <Compile Include="GenericLinkedList\LinkedListTester.cs" />
     <Compile Include="Program.cs" />
@@ -54,5 +57,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
